@@ -286,12 +286,6 @@ function playback(){
     playSound.buffer=audio;
     playSound.connect(ctx.destination);
     playSound.start(ctx.currentTime);
+    playSound.loop;
 }
 window.addEventListener('click',playback);  
-function playstop(){
-    const playSound=ctx.createBufferSource();
-    playSound.buffer=audio;
-    playSound.connect(ctx.destination);
-    playSound.stop(ctx.currentTime);
-}
-window,addEventListener('click',playstop)
